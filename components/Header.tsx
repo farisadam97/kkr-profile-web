@@ -8,9 +8,9 @@ import Image from "next/image";
 const Header = () => {
   return (
     <header className="w-full">
-      <div className="w-[1280px] mx-auto flex justify-center items-center h-[600px]">
-        <div className="bg-red-800 basis-3/5 h-full flex items-center  ">
-          <div className="w-full font-serif ">
+      <div className="w-[1366px] mx-auto flex justify-center items-center h-[600px]">
+        <div className="basis-3/5 h-full flex items-center ">
+          <div className="w-full font-serif border-solid border-t-4 border-b-4 border-black py-8">
             <h2 className="text-6xl py-1 ">Hi, It's me Kukuh</h2>
             <p className="text-6xl py-1">
               I'm a&nbsp;
@@ -25,7 +25,7 @@ const Header = () => {
               width={300}
               height={300}
               alt="Picture of the author"
-              className="mx-auto object-contain border-solid border-8 border-white shadow-md"
+              className="mx-auto object-contain  drop-shadow__photo-profile"
             />
           </div>
         </div>
