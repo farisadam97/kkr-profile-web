@@ -8,3 +8,9 @@ export const typeAnimationValue = [
   "DevOps",
   1000,
 ];
+
+export const ItemPorfolio = {
+  title: "Alalal",
+  description: "Alalalala",
+  image: "/imagedsadsa.png",
+};

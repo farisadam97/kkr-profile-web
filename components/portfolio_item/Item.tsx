@@ -9,7 +9,7 @@ import {
 
 import { ItemPorfolio } from "@/types";
 import Image from "next/image";
-const Item = (props: ItemPorfolio) => {
+const Item = ({ title, description, image }: ItemPorfolio) => {
   return (
     <Card className="border-none hover:scale-105 hover:cursor-pointer transition-all">
       <Image

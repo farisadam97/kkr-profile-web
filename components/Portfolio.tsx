@@ -1,5 +1,6 @@
 import React from "react";
 import Item from "./portfolio_item/Item";
+import { ItemPorfolio } from "@/constants";
 
 const Portfolio = () => {
   return (
@@ -9,10 +10,26 @@ const Portfolio = () => {
           Portfolio
         </h1>
         <div className="grid grid-cols-3 gap-x-5 gap-y-8 py-5">
-          <Item />
-          <Item />
-          <Item />
-          <Item />
+          <Item
+            title={ItemPorfolio.title}
+            description={ItemPorfolio.description}
+            image={ItemPorfolio.image}
+          />
+          <Item
+            title={ItemPorfolio.title}
+            description={ItemPorfolio.description}
+            image={ItemPorfolio.image}
+          />
+          <Item
+            title={ItemPorfolio.title}
+            description={ItemPorfolio.description}
+            image={ItemPorfolio.image}
+          />
+          <Item
+            title={ItemPorfolio.title}
+            description={ItemPorfolio.description}
+            image={ItemPorfolio.image}
+          />
         </div>
       </div>
     </div>
