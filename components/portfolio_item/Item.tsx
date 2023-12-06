@@ -7,9 +7,9 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-import { ItemPorfolio } from "@/types";
+import { ItemPortfolio } from "@/types";
 import Image from "next/image";
-const Item = ({ title, description, image }: ItemPorfolio) => {
+const Item = ({ title, description, image }: ItemPortfolio) => {
   return (
     <Card className="border-none hover:scale-105 hover:cursor-pointer transition-all">
       <Image
@@ -22,14 +22,14 @@ const Item = ({ title, description, image }: ItemPorfolio) => {
       <CardHeader>
         <CardTitle>Card Title</CardTitle>
       </CardHeader>
-      <CardContent>
+      {/* <CardContent>
         <div className="w-full text-ellipsis line-clamp-4">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos
           ipsum illum officiis voluptatum quidem adipisci laudantium aliquam
           laboriosam eligendi sapiente modi ducimus quia, quo repellat labore.
           Consectetur modi veniam ab.
         </div>
-      </CardContent>
+      </CardContent> */}
     </Card>
   );
 };
