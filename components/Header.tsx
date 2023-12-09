@@ -3,14 +3,17 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { typeAnimationValue } from "@/constants";
+import { playfairDisplay } from "@/lib/fonts";
 import Image from "next/image";
 
 const Header = () => {
   return (
-    <header className="w-full">
+    <header id="header" className="w-full">
       <div className="w-[1366px] mx-auto flex justify-center items-center h-[600px]">
         <div className="basis-3/5 h-full flex items-center ">
-          <div className="w-full font-serif border-solid border-t-4 border-b-4 border-black py-8">
+          <div
+            className={`w-full font-serif border-solid border-t-4 border-b-4 border-black py-8 ${playfairDisplay.className} font-medium`}
+          >
             <h2 className="text-6xl py-1 ">Hi, It's me Kukuh</h2>
             <p className="text-6xl py-1">
               I'm a&nbsp;

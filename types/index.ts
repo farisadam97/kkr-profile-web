@@ -1,5 +1,7 @@
 export interface ItemPortfolio {
-  title: string;
-  description: string;
-  image: string;
+  data: {
+    title: string;
+    description: string;
+    image: string;
+  };
 }

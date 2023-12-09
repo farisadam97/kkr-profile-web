@@ -67,6 +67,10 @@
   .drop-shadow__photo-profile {
     filter: drop-shadow(20px 24px 1px #000000);
   }
+
+  .profile__about--location {
+    left: -1rem;
+  }
 }
 
 @layer base {

@@ -10,7 +10,8 @@ export const typeAnimationValue = [
 ];
 
 export const ItemPorfolio = {
-  title: "Alalal",
+  title:
+    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos  ipsum illum officiis voluptatum quidem adipisci laudantium aliquam",
   description: "Alalalala",
-  image: "/imagedsadsa.png",
+  image: "/circus.png",
 };
