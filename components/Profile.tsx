@@ -2,6 +2,18 @@ import React from "react";
 import Image from "next/image";
 import { lato } from "@/lib/fonts";
 
+const LinkConnect = ({ link, image }: any) => {
+  return (
+    <a href={link} target="_blank" className="">
+      <img
+        src={image}
+        alt=""
+        className="w-16 px-3 transition-all hover:scale-105"
+      />
+    </a>
+  );
+};
+
 const Profile = () => {
   return (
     <div className="w-full py-10">
@@ -28,9 +40,22 @@ const Profile = () => {
             GO, Node JS, Java Android Studio, MySQL, Linux Server, and C++. Keen
             to learn about building and developing system. Able to learn quickly
             and adapt to new technologies.
+            <br />
           </p>
+          <h1 className="text-3xl font-bold ">Connect with me</h1>
+          <div className="py-4 flex justify-items-center">
+            <LinkConnect link={"mailto:"} image={"/email.png"} />
+            <LinkConnect
+              link={
+                "https://www.linkedin.com/in/kukuh-kurniadhi-raharjo-9b702113b/"
+              }
+              image={"/linkedin.png"}
+            />
+            <LinkConnect link={"mailto:"} image={"/github.png"} />
+          </div>
         </div>
       </div>
+      <div className="w-[1366px] mx-auto"></div>
     </div>
   );
 };

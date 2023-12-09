@@ -15,6 +15,8 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 
+import { lato } from "@/lib/fonts";
+
 import { ItemPortfolio } from "@/types";
 import Image from "next/image";
 const Item = ({ data }: ItemPortfolio) => {
@@ -31,7 +33,9 @@ const Item = ({ data }: ItemPortfolio) => {
           />
           <CardHeader>
             <CardTitle>
-              <span className="w-full text-ellipsis line-clamp-3">
+              <span
+                className={`w-full text-justify break-all font-normal text-ellipsis line-clamp-3 ${lato.className}`}
+              >
                 {data.title}
               </span>
             </CardTitle>
@@ -46,10 +50,10 @@ const Item = ({ data }: ItemPortfolio) => {
       </CardContent> */}
         </Card>
       </DialogTrigger>
-      <DialogContent className="max-w-[800px] ">
+      <DialogContent className="max-w-[800px]   ">
         <DialogHeader>
           {/* <DialogTitle>Are you sure absolutely sure?</DialogTitle> */}
-          <DialogDescription>
+          <DialogDescription className="max-h-[1000px] overflow-auto custom-scrollbar">
             <div className="py-2 mt-4">
               <Image
                 src={data.image}
@@ -59,8 +63,9 @@ const Item = ({ data }: ItemPortfolio) => {
                 className="rounded-t-lg"
               />
             </div>
-            <div className="">
-              <h1 className="text-2xl">{data.title}</h1>
+            <div className="text-black text-justify">
+              <h1 className="text-2xl font-normal  py-2">{data.title}</h1>
+              <p className="text-lg py-2 ">{data.description} </p>
             </div>
           </DialogDescription>
         </DialogHeader>
