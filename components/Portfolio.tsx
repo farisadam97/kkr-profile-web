@@ -1,6 +1,6 @@
 import React from "react";
 import Item from "./portfolio_item/Item";
-import { ItemPorfolio } from "@/constants";
+import { ItemsPortfolio } from "@/constants";
 import { playfairDisplay } from "@/lib/fonts";
 
 const Portfolio = () => {
@@ -13,10 +13,13 @@ const Portfolio = () => {
           Portfolio
         </h1>
         <div className="grid grid-cols-3 gap-x-10 gap-y-10 py-10">
+          {ItemsPortfolio.map((item, index) => (
+            <Item key={index} data={item} />
+          ))}
+          {/* <Item data={ItemPorfolio} />
           <Item data={ItemPorfolio} />
           <Item data={ItemPorfolio} />
-          <Item data={ItemPorfolio} />
-          <Item data={ItemPorfolio} />
+          <Item data={ItemPorfolio} /> */}
         </div>
       </div>
     </div>

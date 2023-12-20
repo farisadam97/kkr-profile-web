@@ -19,7 +19,7 @@ import { lato } from "@/lib/fonts";
 
 import { ItemPortfolio } from "@/types";
 import Image from "next/image";
-const Item = ({ data }: ItemPortfolio) => {
+const Item = ({ data }: any) => {
   return (
     <Dialog>
       <DialogTrigger>
